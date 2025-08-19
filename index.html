@@ -10,7 +10,7 @@
             --dark-bg: #1a1a1a;
             --darker-bg: #121212;
             --primary: #ffffff;
-            --secondary: #a0a0a0;
+            --secondary: #e9e9e9;
             --accent: #4a9ff5;
             --spacing-unit: 20px;
         }
@@ -66,7 +66,7 @@
             text-decoration: none;
             transition: color 0.3s;
             font-weight: 500;
-            font-size: 11px;
+            font-size: 13px;
         }
         
         .nav-links a:hover {
@@ -143,13 +143,12 @@
             display: flex;
             flex-direction: column;
             align-items: center;
-            gap: var(--spacing-unit);
+            gap: 100px;
         }
         
         @media (min-width: 768px) {
             .about-content {
                 flex-direction: row;
-                align-items: flex-start;
             }
         }
         
@@ -187,6 +186,8 @@
             display: flex;
             flex-wrap: wrap;
             gap: calc(var(--spacing-unit) / 2);
+            justify-content: center;
+
         }
         
         .skill {
@@ -293,6 +294,22 @@
             text-decoration: none;
             transition: color 0.3s;
         }
+
+        .skill-btn {
+            display: inline-block;
+            padding: 12px 20px;
+            background-color: #4a9ff5;
+            color: rgb(34, 34, 34);
+            text-decoration: none;
+            border-radius: 50px;
+            font-weight: bold;
+            transition: background-color 0.3s ease;
+            margin-top: 1cm;
+        }
+
+        .skill-btn:hover {
+            background-color: #dbdbdb;
+        }
         
         .social-links a:hover {
             color: var(--primary);
@@ -356,7 +373,6 @@
                 <a href="#thumbnails">Thumbnails</a>
                 <a href="#redes-sociais">Posts</a>
                 <a href="#cartoons">Cartoons</a>
-                <a href="#contato">Contato</a>
             </div>
         </div>
     </nav>
@@ -386,6 +402,13 @@
                     <span class="skill">Sony Vegas</span>
                     <span class="skill">CapCut</span>
                 </div>
+
+                <div class="skills">
+
+                    <a href="https://caducaducadu.github.io/curriculo" class="skill-btn">
+                        Clique aqui para ver meu currículo
+                    </a>
+            </div>
             </div>
         </div>
     </section>
