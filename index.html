@@ -368,10 +368,10 @@
         <div class="nav-container">
             <div class="logo">PORTFÓLIO</div>
             <div class="nav-links">
-                <a href="#logos">Logos</a>
                 <a href="#artes">Banners</a>
+                <a href="#logos">Logos</a>
                 <a href="#thumbnails">Thumbnails</a>
-                <a href="#redes-sociais">Posts</a>
+                <a href="#redes-sociais">Posts</a>  
                 <a href="#cartoons">Cartoons</a>
             </div>
         </div>
@@ -414,28 +414,18 @@
     </section>
 
     <!-- Portfolio Sections -->
-    <section class="section fade-in" id="logos">
-        <h2 class="section-title">Logos</h2>
-        <div class="portfolio-grid">
-            <div class="portfolio-item">
-                <img src="Logos/logo_kfit.png">
-                <div class="portfolio-overlay">
-                    <h3>K-Fits</h3>
-                </div>
-            </div>
-            
-            <div class="portfolio-item">
-                <img src="Logos/logo_pixaly2.png">
-                <div class="portfolio-overlay">
-                    <h3>Pixaly</h3>
-                </div>
-            </div>
-        </div>
-    </section>
-    
+
     <section class="section fade-in" id="artes">
         <h2 class="section-title">Banners</h2>
         <div class="portfolio-grid">
+
+            <div class="portfolio-item">
+                <img src="Artes/sofia.png">
+                <div class="portfolio-overlay">
+                    <h3>Sofia Camara</h3>
+                </div>
+            </div>
+
             <div class="portfolio-item">
                 <img src="Artes/juice.png">
                 <div class="portfolio-overlay">
@@ -452,6 +442,26 @@
                 <img src="Artes/mario.png">
                 <div class="portfolio-overlay">
                     <h3>Mario</h3>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <section class="section fade-in" id="logos">
+        <h2 class="section-title">Logos</h2>
+        <div class="portfolio-grid">
+            <div class="portfolio-item">
+                <img src="Logos/logo_kfit.png">
+                <div class="portfolio-overlay">
+                    <h3>K-Fits</h3>
+                </div>
+            </div>
+            
+            <div class="portfolio-item">
+                <img src="Logos/logo_pixaly2.png">
+                <div class="portfolio-overlay">
+                    <h3>Pixaly</h3>
                 </div>
             </div>
         </div>
@@ -492,23 +502,33 @@
         <div class="portfolio-grid">
             <div class="portfolio-item">
                 <img src="Posts Para Redes Sociais/post1.png">
-                <div class="portfolio-overlay"></div>
+                <div class="portfolio-overlay">
+                    <h3>Projeto "Top Jobs"</h3>                    
+                </div>
             </div>
             <div class="portfolio-item">
                 <img src="Posts Para Redes Sociais/post2.png">
-                <div class="portfolio-overlay"></div>
+                <div class="portfolio-overlay">
+                    <h3>Projeto "Top Jobs"</h3>                    
+                </div>
             </div>
             <div class="portfolio-item">
                 <img src="Posts Para Redes Sociais/post3.png">
-                <div class="portfolio-overlay"></div>
+                <div class="portfolio-overlay">
+                    <h3>Projeto "Top Jobs"</h3>
+                </div>
             </div>
             <div class="portfolio-item">
                 <img src="Posts Para Redes Sociais/post4.png">
-                <div class="portfolio-overlay"></div>
+                <div class="portfolio-overlay">
+                    <h3>App "Compara Preço"</h3>
+                </div>
             </div>
             <div class="portfolio-item">
                 <img src="Posts Para Redes Sociais/post5.png">
-                <div class="portfolio-overlay"></div>
+                <div class="portfolio-overlay">
+                    <h3>App "Compara Preço"</h3>
+                </div>
             </div>
         </div>
     </section>
@@ -576,7 +596,7 @@
         document.querySelectorAll('.portfolio-item').forEach(item => {
             item.addEventListener('click', function() {
                 const img = this.querySelector('img');
-                const title = this.querySelector('h3')?.textContent || 'Projeto';
+                const title = this.querySelector('h3')?.textContent || '';
                 const description = this.querySelector('p')?.textContent || '';
                 
                 // Create lightbox
